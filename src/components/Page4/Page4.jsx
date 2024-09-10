@@ -1,5 +1,7 @@
 import React from "react";
 import { Box } from "@mui/material";
+import Ex3 from "./Ex3";
+//import Ex4 from "./Ex4";
 
 const Page4 = () => {
   return (
@@ -15,7 +17,9 @@ const Page4 = () => {
           justifyContent: "center",
           alignItems: "center",
         }}
-      ></Box>
+      >
+        <Ex3 />
+      </Box>
     </main>
   );
 };
