@@ -22,7 +22,7 @@ ChartJS.register(
   LineElement
 );
 
-const Ex4Chart = () => {
+const Excel4Chart = () => {
   // 하드코딩된 임의의 데이터
   const chartData = {
     labels: ["9시", "10시", "11시", "12시", "1시", "2시"],
@@ -90,7 +90,21 @@ const Ex4Chart = () => {
     },
   };
 
-  return <Bar data={chartData} options={options} plugins={[ChartDataLabels]} />;
+  return (
+    <div
+      style={{
+        width: "100%",
+        height: "500px", // 고정된 높이 유지
+        margin: "0px",
+        padding: "10px",
+        display: "flex", // Flexbox 사용
+        justifyContent: "center", // 가로 중앙 정렬
+        alignItems: "center", // 세로 중앙 정렬
+      }}
+    >
+      <Bar data={chartData} options={options} plugins={[ChartDataLabels]} />
+    </div>
+  );
 };
 
-export default Ex4Chart;
+export default Excel4Chart;

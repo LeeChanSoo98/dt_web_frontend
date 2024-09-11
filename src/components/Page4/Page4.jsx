@@ -1,7 +1,6 @@
 import React from "react";
 import { Box } from "@mui/material";
-import Ex3 from "./Ex3";
-//import Ex4 from "./Ex4";
+import Excel4 from "./Excel4";
 
 const Page4 = () => {
   return (
@@ -12,13 +11,12 @@ const Page4 = () => {
           display: "flex",
           flexDirection: "column",
           width: "100%",
-          maxWidth: "2000px",
-          background: "white",
+          height: "100%",
           justifyContent: "center",
-          alignItems: "center",
+          alignItems: "space-between",
         }}
       >
-        <Ex3 />
+        <Excel4 />
       </Box>
     </main>
   );
